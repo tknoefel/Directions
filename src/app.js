@@ -1,33 +1,14 @@
 console.log('Simply.js demo!');
 
-simply.on('singleClick', function(e) {
-  console.log(util2.format('single clicked $button!', e));
-  simply.subtitle('Pressed ' + e.button + '!');
-});
 
-simply.on('longClick', function(e) {
-  console.log(util2.format('long clicked $button!', e));
-  simply.vibe();
-  simply.scrollable(e.button !== 'select');
-});
-
-simply.on('accelTap', function(e) {
-  console.log(util2.format('tapped accel axis $axis $direction!', e));
-  simply.subtitle('Tapped ' + (e.direction > 0 ? '+' : '-') + e.axis + '!');
-});
-
-simply.text({
-  title: 'Simply Demo!',
-  body: 'This is a demo. Press buttons or tap the watch!',
-}, true);
 
 simply.text({
   title:"Transit", 
   subtitle:"Direct", 
   body:"Loading..." });
 
-var DESTINATIONS = [{ "short":"Work", "full":"Your Address Here" } ]; //more destinations here 
-var API_KEY = "YOUR API KEY HERE";
+var DESTINATIONS = [{ "short":"Work", "full":"Tavistock Tower, Russel Place, London, SE16 7PQ" } ]; //more destinations here 
+var API_KEY = "AIzaSyCkk8zJcfQWi7tkKSC43xjs2rflFbVBZfY ";
 var directionsData = null; 
 var origin = null;
 var depth = 0; 
